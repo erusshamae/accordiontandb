@@ -1,0 +1,92 @@
+/** code by webdevtrick ( https://webdevtrick.com ) **/ 
+body {
+    background: #3f0000;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  
+  }
+
+  h1 {
+    color: #ff9100;
+    font-size:  50px;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+  
+  }
+
+  h2 {
+    color: #00f5a3;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 0;
+    font-family: 'Cinzel', serif;
+  
+  }
+  p {
+    color: #ffbb00;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+  }
+  .main {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .list {
+    margin: 90px 0;
+    overflow: hidden;
+    padding: 0;
+  }
+  .list li {
+    list-style-type: none;
+    padding: 0;
+  }
+  .list-heading {
+    background: #000000;
+    border: rgb(255, 123, 0);
+    border-bottom: solid 5px #ff8800;
+    cursor: pointer;
+    display: block;
+    outline: none;
+    padding: 2em;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  .list-heading:before {
+    background: #4da0ff;
+    content: '';
+    height: 2px;
+    margin-right: 37px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: rotate(-90deg);
+    transition: all 0.2s ease-in-out;
+    width: 14px;
+  }
+  .list-heading:after {
+    background: #4da0ff;
+    content: '';
+    height: 2px;
+    margin-right: 37px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 14px;
+  }
+  .list-heading.active:before {
+    transform: rotate(0deg);
+  }
+  .list-heading.active h2, .list-heading:focus h2 {
+    position: relative;
+    color: #ff0000;
+  }
+  .list-text {
+    background: #35078b;
+    display: none;
+    overflow: hidden;
+  }
